@@ -1,0 +1,254 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth
+}
+h3{
+  padding: 25px;
+  font-family: sans-serif;
+  color: black;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+header{
+  padding: 15px;
+}
+.container{
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+ul li{
+  display: inline-block;
+  margin: 15px;
+}
+.logo{
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  color: orangered;
+  border-bottom: solid 3px orangered;
+}
+ul li a{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s;
+  color: orangered;
+}
+.dropdown{
+  position: absolute;
+  content: "";
+  background: black;
+  width: 350px;
+  margin: 15px;
+  z-index:999;
+  opacity: 0;
+  transition: 0.6s
+}
+.menus:hover .dropdown{
+  opacity: 1;
+  transition: 0.6s;
+  border-radius: 15px;
+  transform: rotate(360deg)
+}
+.dropdown li a{
+  color: snow;
+}
+ul li a:hover{
+  transition: 0.6s;
+  background: orangered;
+  color: snow;
+  padding: 5px;
+  border-radius: 15px;
+}
+.btn1{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  background: orangered;
+  border: none;
+  font-size: 25px;
+  color: snow;
+  transition: 0.6s;
+}
+.btn1:hover{
+  transition: 0.6s;
+  background: transparent;
+  color: orangered;
+  border: solid 2px orangered;
+  border-radius: 7px;
+}
+.contant{
+  background-image: url(img/nuts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+}
+.text-contant span{
+  margin: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 2px
+}
+.text-contant h1{
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-shadow: 0 0 10px orangered,
+               0 0 20px orangered,
+               0 0 30px orangered,
+               0 0 40px orangered;
+  color: snow;
+  margin: 15px;
+  font-size: 50px
+}
+.text-contant p{
+  width: 450px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+.nuts{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  text-align: center;
+}
+.text-nu{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: snow;
+  margin: 15px;
+  text-shadow: 0 0 10px orangered,
+               0 0 20px orangered,
+               0 0 30px orangered,
+               0 0 40px orangered;
+}
+.textp-nu{
+  width: 250px;
+  margin: auto;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.price-nu{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+}
+.btn-nu{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 5px;
+  background: orangered;
+  border: none;
+  font-size: 22px;
+  color: snow;
+  transition: 0.6s;
+}
+.btn-nu:hover{
+  transition: 0.6s;
+  background: transparent;
+  color: orangered;
+  border: solid 2px orangered;
+  border-radius: 7px;
+}
+.nu{
+  width: 200px;
+  margin: 15px;
+  transition: 0.6s;
+}
+.nu:hover{
+  transform: translate(0,-15px);
+  transition: 0.6s
+}
+.blogs{
+  margin-top: 50px;
+  background: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-blog span{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: snow;
+}
+.text-blog h2{
+  padding: 10px;
+  font-family: "Piedra", serif;
+  font-weight: bolder;
+  font-size: 60px;
+  color: snow;
+}
+.blog-nav li{
+  display: inline-block;
+  margin: 15px;
+}
+.blog-nav li a{
+  color: snow;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s;
+}
+.blog-nav li a:hover{
+  color: black;
+  border-bottom: solid 3px black;
+  border-radius: 0px;
+  transition: 0.6s;
+}
+.text-blog p{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  width: 450px;
+  margin: auto;
+  color: snow;
+}
+.text-blog h4{
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: snow;
+}
+.icons{
+  padding: 10px;
+  margin: 10px;
+  transition: 0.6s;
+  width: 30px;
+} 
+marquee{
+  padding: 25px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  color: snow;
+  text-shadow: 0 0 10px orangered,
+               0 0 20px orangered,
+               0 0 30px orangered,
+               0 0 40px orangered;
+}
+  

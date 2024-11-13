@@ -1,0 +1,124 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth
+}
+header{
+  padding: 15px;
+}
+.container{
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+ul li{
+  display: inline-block;
+  margin: 15px;
+}
+.logo{
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  color: orangered;
+  border-bottom: solid 3px orangered;
+}
+ul li a{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s;
+  color: orangered;
+}
+.dropdown{
+  position: absolute;
+  content: "";
+  background: black;
+  width: 350px;
+  margin: 15px;
+  z-index:999;
+  opacity: 0;
+  transition: 0.6s
+}
+.menus:hover .dropdown{
+  opacity: 1;
+  transition: 0.6s;
+  border-radius: 15px;
+  transform: rotate(360deg)
+}
+.dropdown li a{
+  color: snow;
+}
+ul li a:hover{
+  transition: 0.6s;
+  background: orangered;
+  color: snow;
+  padding: 5px;
+  border-radius: 15px;
+}
+.btn1{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 7px;
+  background: orangered;
+  border: none;
+  font-size: 25px;
+  color: snow;
+  transition: 0.6s;
+}
+.btn1:hover{
+  transition: 0.6s;
+  background: transparent;
+  color: orangered;
+  border: solid 2px orangered;
+  border-radius: 7px;
+}
+
+.contant{
+ background-image: url(img/milks.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ height: 25vh;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 2% 5%;
+} 
+.text-contant span{
+  margin: 15px;
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.text-contant h1{
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  color: snow;
+  text-shadow: 0 0 10px orangered,
+               0 0 20px orangered,
+               0 0 30px orangered,
+               0 0 40px orangered
+}
+.text-contant p{
+  width: 450px;
+  margin: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px
+}
+h3{
+  padding: 25px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: orangered;
+  font-size: 50px
+}
